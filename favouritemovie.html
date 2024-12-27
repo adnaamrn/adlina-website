@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies and Music</title>
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            font-family: arial, sans-serif;
+            background-image: url(images/background\ 5.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centering the content horizontally */
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center; /* Aligning text to the center */
+        }
+
+        nav {
+        display: flex;
+        justify-content: center; /* Center the link horizontally */
+        align-items: center; /* Align vertically */
+    }
+
+    nav a {
+        background-color: #46135f;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+       /* Title Styling */
+       .title {
+            text-align: center;
+            font-size: 36px;
+            color: #46135f;
+            font-family: 'Bazooka';
+            margin-bottom: 20px;
+        }
+
+        /* Content Section Styling */
+        .content {
+            padding: 20px;
+            background-color: #aa88b3;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-boxes {
+            display: flex;
+            flex-wrap: wrap; /* Ensures that the content wraps to the next row if needed */
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .media-box {
+            background-color: #c0adcc;
+            padding: 20px;
+            width: 48%; /* Each box will take 48% of the width to be side by side */
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box; /* Ensure padding is included in the width calculation */
+        }
+
+        .media-box img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer; /* Change cursor to indicate the image is clickable */
+        }
+
+        .media-box h3 {
+            font-size: 22px;
+            margin-top: 15px;
+        }
+
+        .media-box p {
+            font-size: 16px;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .media-box {
+                width: 100%; /* Make each box 100% width on small screens */
+            }
+        }
+
+         /* Footer Styling */
+         .back-to-top {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .back-to-top a {
+                font-size: 18px;
+                color: #f1ebf1;
+                text-decoration: none;
+                padding: 12px 30px;
+                background-color: #46135f;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .back-to-top a:hover {
+                background-color: #3d2846;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+     <!-- Title Section -->
+     <div class="title">
+        🎥My Favorite Movies and Music🎤
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <!-- Movies Section -->
+        <section>
+            <h2>My Favorite Movies🎬</h2>
+            <div class="media-boxes">
+                <!-- Movie 1 Box -->
+                <div class="media-box">
+                    <h2>"Midnight Runner"</h2>
+                    <a href="https://www.youtube.com/watch?v=XJf3lqjosUo" target="_blank">
+                        <img src="images/movie poster.jpg" alt="Midnight Runner Movie Poster"> <!-- Replace with actual image path -->
+                    </a>
+                    <h3>Director: Joo Hwan Kim</h3>
+                    <p>Starring: Park Seo Joon, Kang Ha Neul, Park Ha Seon</p>
+                    <p>Genre: Action, Comedy</p>
+                    <p>Release Year: 2017</p>
+                    <p>"Two friends who are students at Korean National Police University, find themselves in an endless race against time after they witness a kidnapping and decide to use their knowledge."</p>
+                </div>
+
+                <!-- Movie 2 Box -->
+                <div class="media-box">
+                    <h2>"Extreme Job"</h2>
+                    <a href="https://www.youtube.com/watch?v=l9Hu3Xocc-g" target="_blank">
+                        <img src="images/movie poster 2.jpg" alt="Extreme Job"> <!-- Replace with actual image path -->
+                    </a>
+                    <h3>Director: Lee Byeong Heon</h3>
+                    <p>Starring: Ryu Seung Ryong, Lee Hanee, Jin Seon Kyu</p>
+                    <p>Genre: Action, Comedy</p>
+                    <p>Release Year: 2019</p>
+                    <p>"A police undercover operation takes a delicious, unexpected turn."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section>
+            <h2>My Favorite Songs🎧</h2>
+            <div class="media-boxes">
+                <!-- Song 1 Box -->
+                <div class="media-box">
+                    <h2>"Lily of the Valley"</h2>
+                    <h3>Artist: Daniel</h3>
+                    <p>Genre: Korean Rock</p>
+                    <p>Release Year: 2021</p>
+                    <p>"express a deep sense of gratitude and reverence towards a significant other, symbolized by the endearing metaphor of a flower"</p>
+                    <audio controls>
+                        <source src="audio/songs 1.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <!-- Song 2 Box -->
+                <div class="media-box">
+                    <h2>"Drunk Text"</h2>
+                    <h3>Artist: Hendry Moodie</h3>
+                    <p>Genre: Pop</p>
+                    <p>Release Year: 2023</p>
+                    <p>"A fresh pop track with catchy beats and relatable lyrics."</p>
+                    <audio controls>
+                        <source src="audio/songs 2.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <div class="back-to-top">
+        <a href="#top">Back to Top</a>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(images/background\ 5.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centering the content horizontally */
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center; /* Aligning text to the center */
+        }
+
+        /* Header Styling */
+        nav {
+            display: flex;
+            justify-content: center; /* Center the link horizontally */
+            align-items: center; /* Align vertically */
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        nav a {
+            background-color: #46135f;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 32px;
+            background-color: rgba(231, 140, 235, 0.8);
+            padding: 15px;
+            margin-top: 80px; /* Adjust for fixed header */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 100%;
+            max-width: 900px; /* Set a max width for better readability */
+        }
+
+        /* Section Title Styling */
+        h2 {
+            background-color: rgba(231, 140, 235, 0.8);
+            color: rgb(77, 47, 74);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 40px auto 20px;
+            text-align: center;
+            width: fit-content;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Family Box */
+        .Family-box {
+            background-color: rgba(231, 140, 235, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 70%;
+            text-align: center;
+        }
+
+        .Family-box video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Nephew Box */
+        .Nephew-box {
+            background-color: rgba(231, 140, 235, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 70%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .Nephew-box img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .Nephew-box img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Friends Box */
+        .Friends-box {
+            background-color: rgba(231, 140, 235, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 70%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .Friends-box img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .Friends-box img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Paragraph Styling */
+        p {
+            color: brown;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 10px 20px;
+            background-color: brown;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html"> Back to Home</a>
+    </nav>
+</header>
+
+<h1>✧･ﾟThis is My Gallery･ﾟ✧</h1>
+
+<h2>⋆.˚ My Beloved Family ✧₊⁺</h2>
+<div class="Family-box">
+    <video src="video/Family 1.MOV" controls></video>
+</div>
+
+<h2>𐙚 ˚ My Nephew 𐙚 ˚</h2>
+<div class="Nephew-box">
+    <a href="images/with nephew.jpg">
+        <img src="images/with nephew.jpg" alt="With my only one Nephew">
+    </a>
+    <a href="images/anak buah 1.jpg">
+        <img src="images/anak buah 1.jpg" alt="My Nephew">
+    </a>
+    <a href="images/photo_2024-11-05_14-43-51.jpg">
+        <img src="images/photo_2024-11-05_14-43-51.jpg">
+    </a>
+</div>
+
+<!-- New Friends Section -->
+<h2>✧˚ My Lovely Friends ˚✧</h2>
+<div class="Friends-box">
+    <a href="images/friends 2.jpg">
+        <img src="images/friends 2.jpg" alt="Friend 1">
+    </a>
+    <a href="images/friends 3.jpg">
+        <img src="images/friends 3.jpg" alt="Friend 2">
+    </a>
+    <a href="images/friends 4.jpg">
+        <img src="images/friends 4.jpg" alt="Friend 3">
+    </a>
+    <a href="images/friends 1.jpg">
+        <img src="images/friends 1.jpg" alt="Friend 4">
+    </a>
+    <a href="images/friends 6.jpg">
+        <img src="images/friends 6.jpg" alt="Friends 5">
+    </a>
+    <a href="images/friends 7.jpg">
+        <img src="images/friends 7.jpg" alt="Friends 6">
+    </a>
+</div>
+<div align="center";>
+    <a href="#top">Back to Top</a>
+    </div>
+
+</body>
+</html>
+
+

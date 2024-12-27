@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>Link Exercise</title>
+        <style>
+            /* General Styling */
+            body {
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                background-image: url('images/background 5.jpg');
+                background-size: cover;
+                background-attachment: fixed;
+                color: #333;
+                padding: 20px;
+            }
+
+            /* Header Styling */
+        nav {
+            display: flex;
+            justify-content: center; /* Center the link horizontally */
+            align-items: center; /* Align vertically */
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        nav a {
+            background-color: #46135f;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+            /* Title Styling */
+            h1 {
+                font-size: 32px;
+                background-color: rgba(231, 140, 235, 0.8);
+                padding: 20px;
+                margin-top: 100px; /* Adjust for header */
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                display: inline-block;
+                max-width: 900px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            /* Link Styling */
+            h2 {
+                text-align: center;
+                font-size: 20px;
+                color: #46135f;
+            }
+
+            h2 a {
+                color: #46135f;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 10px;
+                transition: color 0.3s ease;
+            }
+
+            h2 a:hover {
+                color: #ff66b2;
+            }
+
+            /* Buttons Styling */
+            .button-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .button-container button {
+                background-color: #46135f;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 12px 30px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .button-container button:hover {
+                background-color: #ff66b2;
+            }
+
+            /* Image Styling */
+            .image-links {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .image-links img {
+                width: 40px;
+                margin: 5px;
+                border-radius: 5px;
+                transition: transform 0.3s ease;
+            }
+
+            .image-links img:hover {
+                transform: scale(1.1);
+            }
+
+       /* Footer Styling */
+       .back-to-top {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .back-to-top a {
+                font-size: 18px;
+                color: #f1ebf1;
+                text-decoration: none;
+                padding: 12px 30px;
+                background-color:  #46135f;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .back-to-top a:hover {
+                background-color: #3d2846;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Back to Home</a>
+            </nav>
+        </header>
+
+        <div align="center">
+            <h1>General Information Link</h1>
+        </div>
+
+        <!--Relative Link-->
+        <div class="link-container">
+            <h2>Click to go to download pages:</h2>
+            <p><a href="download1.php">Go to download page 1</a></p>
+            <p><a href="download2.php">Go to download page 2</a></p>
+        </div>
+
+        <!--Absolute Link-->
+        <div class="link-container">
+            <p><a href="https://uitm.edu.my/index.php/en/">View Logo UITM</a></p>
+            <p><a href="download2.php/statistic.html">Get Data</a></p>
+        </div>
+
+        <hr>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <h3>Link to my website page:</h3>
+            <button onclick="document.location = 'index.html'">Homepage</button>
+            <button onclick="document.location = 'newbiodata.html'">Biodata</button>
+            <button onclick="document.location = 'myfamily.html'">Family</button>
+            <button onclick="document.location = 'mygallery.html'">Gallery</button>
+            <button onclick="document.location = 'education.html'">Education</button>
+            <button onclick="document.location = 'favouritemovie.html'">Favourites</button>
+            <button onclick="document.location = 'link.html'">Link</button>
+        </div>
+
+        <!-- Using images as hyperlinks -->
+        <div class="image-links">
+            <h3>My social media website:</h3>
+            <a href="https://wa.link/i71x3v"><img src="images/icon whatsapp.png" alt="Whastapp"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="images/icon ig.webp" alt="Instagram" width="40px"></a>
+            <a href="mailto:adlinaamran@gmail.com?"><img src="images/icon mail.jpg" alt="Gmail" width="40px"></a>
+        </div>
+        
+        <br>
+        <!-- Image Map -->
+        <div align="center">
+            <h3>Click any state to view the UITM website in every state:</h3>
+            <img src="images/malaysia-map.jpg" usemap="#image-map" alt="Malaysia Map">
+        </div>
+
+        <map name="image-map">
+            <area target="_blank" alt="UITM N9" title="UITM N9" href="https://nsembilan.uitm.edu.my/" coords="456,703,513,645" shape="rect">
+            <area target="_blank" alt="UITM MELAKA" title="UITM MELAKA" href="https://melaka.uitm.edu.my/index.php/en/" coords="489,736,27" shape="circle">
+            <area target="_blank" alt="UITM SELANGOR" title="UITM SELANGOR" href="https://selangor.uitm.edu.my/index.php/ms/" coords="359,582,435,633" shape="rect">
+            <area target="_blank" alt="UITM PERAK" title="UITM PERAK" href="https://perak.uitm.edu.my/index.php/en/" coords="344,431,52" shape="circle">
+            <area target="_blank" alt="UITM JOHOR" title="UITM JOHOR" href="https://johor.uitm.edu.my/" coords="665,778,54" shape="circle">
+            <area target="_blank" alt="UITM PAHANG" title="UITM PAHANG" href="https://pahang.uitm.edu.my/index.php/en/" coords="616,585,64" shape="circle">
+            <area target="_blank" alt="UITM TERENGGANU" title="UITM TERENGGANU" href="https://terengganu.uitm.edu.my/index.php/ms/" coords="580,362,38" shape="circle">
+            <area target="_blank" alt="UITM KELANTAN" title="UITM KELANTAN" href="https://kelantan.uitm.edu.my/index.php/en/" coords="489,280,52" shape="circle">
+            <area target="_blank" alt="UITM PULAU PINANG" title="UITM PULAU PINANG" href="https://penang.uitm.edu.my/index.php/en/" coords="269,338,26" shape="circle">
+            <area target="_blank" alt="UITM PERLIS" title="UITM PERLIS" href="https://perlis.uitm.edu.my/" coords="254,193,28" shape="circle">
+            <area target="_blank" alt="UITM KEDAH" title="UITM KEDAH" href="https://kedah.uitm.edu.my/" coords="311,244,52" shape="circle">
+            <area target="_blank" alt="UITM SARAWAK" title="UITM SARAWAK" href="https://sarawak.uitm.edu.my/" coords="1199,501,78" shape="circle">
+            <area target="_blank" alt="UITM SABAH" title="UITM SABAH" href="https://sabah.uitm.edu.my/" coords="1483,253,77" shape="circle">
+        </map>
+
+        <div class="back-to-top">
+            <a href="#top">Back to Top</a>
+        </div>
+    </body>
+</html>

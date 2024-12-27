@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(images/background\ 5.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centering the content horizontally */
+            justify-content: flex-start;
+            min-height: 100vh;
+            text-align: center; /* Aligning text to the center */
+        }
+
+        /* Header Styling */
+        nav {
+            display: flex;
+            justify-content: center; /* Center the link horizontally */
+            align-items: center; /* Align vertically */
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        nav a {
+            background-color: #46135f;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Title Styling */
+        h1 {
+            font-size: 32px;
+            background-color: rgba(231, 140, 235, 0.8);
+            padding: 15px;
+            margin-top: 80px; /* Adjust for fixed header */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 100%;
+            max-width: 900px; /* Set a max width for better readability */
+        }
+
+        /* Styling for the info boxes */
+        .info-box {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(177, 127, 201, 0.8); /* Slightly transparent background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center everything inside the box */
+            text-align: left; /* Align text to the left */
+        }
+
+        .info-box label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #46135f;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Image Styling */
+        .info-box img {
+            max-width: 35%; /* Make sure the image doesn't exceed box width */
+            height: auto;
+            margin-bottom: 15px; /* Space between image and text */
+            border-radius: 10px; /* Optional: rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: shadow for depth */
+        }
+
+         /* Footer Styling */
+         .back-to-top {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .back-to-top a {
+                font-size: 18px;
+                color: #f1ebf1;
+                text-decoration: none;
+                padding: 12px 30px;
+                background-color: #46135f;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .back-to-top a:hover {
+                background-color: #3d2846;
+            }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html"> Back to Home</a>
+    </nav>
+</header>
+
+<h1>🎓My Education･ﾟ✧</h1>
+
+<!-- Elementary School Info Box -->
+<div class="info-box">
+    <label for="elementary">Elementary School</label>
+    <img src="images/school 1.jpg" alt="Elementary School Image">
+    <ol type="1">
+        <li>Study at Sekolah Kebangsaan Sri Delima</li>
+        <li>From 2011 until 2016</li>
+        <li>Active in school as a preset</li>
+    </ol>
+</div>
+
+<!-- High School Info Box -->
+<div class="info-box">
+    <label for="highschool">High School</label>
+    <img src="images/school 2.jpg" alt="High School Image">
+    <ol type="A">
+        <li>Study at Sekolah Menegah Kebangsaan Dato'Ibrahim Yaacob</li>
+        <li>From 2017 until 2022</li>
+        <li>Take spm examination in this school and got 5A</li>
+        <li>Active as cooperatives school from 2019 until 2022</li>
+    </ol>
+</div>
+
+<!-- University Info Box -->
+<div class="info-box">
+    <label for="university">University Life</label>
+    <img src="images/school 3.jpg" alt="University Life Image">
+    <ol type="I">
+        <li>Information management student</li>
+        <li>Study at UITM Rembau</li>
+        <li>Diploma student for last sem in 2024</li>
+    </ol>
+</div>
+<div class="back-to-top">
+    <a href="#top">Back to Top</a>
+</div>
+    
+</body>
+</html>
+
+
+

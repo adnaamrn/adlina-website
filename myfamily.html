@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY FAMILY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("images/background 5.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+       /* Header Styling */
+         nav {
+        display: flex;
+        justify-content: center; /* Center the link horizontally */
+        align-items: center; /* Align vertically */
+    }
+
+    nav a {
+        background-color: #46135f;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+        /* Title Styling */
+        .main-title {
+            text-align: center;
+            font-size: 36px;
+            font-family: 'bazooka';
+            color: #17202a;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Flex container for the two boxes */
+        .flex-container {
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center the boxes horizontally */
+            gap: 20px; /* Space between the boxes */
+            margin: 20px;
+        }
+
+        /* Shared box styling */
+        .content-container {
+            display: flex;
+            flex-direction: column; /* Stack the text and images vertically */
+            justify-content: center;
+            align-items: center;
+            border: 5px solid #616061; /* Border around the whole section */
+            border-radius: 20px; /* Rounded corners for the box */
+            padding: 20px;
+            width: 30%; /* Adjust the width of the box */
+            background-color: #d9a1eb; /* Light background color for the box */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow for depth */
+        }
+
+        /* Container for the images */
+        .image-container {
+            display: flex; /* Display images side by side */
+            justify-content: center; /* Center images horizontally */
+            gap: 10px; /* Space between the images */
+            margin-top: 10px;
+        }
+
+        /* Container for each image frame */
+        .image-frame {
+            width: 170px; /* Set the width of the frame */
+            height: 170px; /* Set the height of the frame */
+            border: 3px solid #555; /* Border around the image */
+            border-radius: 10px; /* Rounded corners for the frame */
+            overflow: hidden; /* Hide part of the image outside the frame */
+            display: flex;
+            flex-direction: column; /* Align image and caption vertically */
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Image inside the frame */
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image fits within the frame without distortion */
+        }
+
+        /* Caption styling */
+        .caption {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* Styling for the subtitle */
+        h2 {
+            color: #17202a;
+            font-size: 24px;
+            font-family: 'bazooka', sans-serif;
+            text-align: center;
+        }
+
+        /* Text paragraph styling */
+        .content-text {
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table, td, tr, th
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        td
+          {
+            text-align: center;
+            background-color: rgb(201, 159, 240);
+          }
+        image
+        {
+            height: 50px;
+            margin: 10px;
+        }
+
+             /* Footer Styling */
+             .back-to-top {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .back-to-top a {
+                font-size: 18px;
+                color: #f1ebf1;
+                text-decoration: none;
+                padding: 12px 30px;
+                background-color: #46135f;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            .back-to-top a:hover {
+                background-color: #3d2846;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+<!-- Main Title -->
+<h1 class="main-title">ㅤ♡ྀི My Family ♡ྀི </h1>
+
+<!-- Flex Container for My Parents and My Siblings -->
+<div class="flex-container">
+    <!-- Wrapper container for "My Parents" -->
+    <div class="content-container">
+        <h2>♡My Parents♡</h2>
+        <p class="content-text">
+            I come from a loving and supportive family of seven. My parents, who have always been my source of strength and 
+            guidance, retired last year. My mother, who worked as a dedicated teacher, and my father are now enjoying their 
+            well-deserved rest. Both of them currently do not have a job, which allows them to spend more time with the family.
+        </p>
+        <!-- Image Container holding both images side by side -->
+        <div class="image-container">
+            <!-- Image frame for My Mother -->
+            <div class="image-frame">
+                <a href="images/ibu.jpg">
+                    <img src="images/ibu.jpg" alt="My Mother">
+                </a>
+                <p class="caption">My Mother</p>
+            </div>
+
+            <!-- Image frame for My Father -->
+            <div class="image-frame">
+                <a href="images/ayah.jpg">
+                    <img src="images/ayah.jpg" alt="My Father">
+                </a>
+                <p class="caption">My Father</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrapper container for "My Siblings" -->
+    <div class="content-container">
+        <h2>♡My Siblings♡</h2>
+        <p class="content-text">
+            I have four amazing siblings who bring so much joy and laughter into our home. Each of them has unique talents 
+            and interests, and we love spending time together as a family. Whether it's sharing stories, playing games, 
+            or simply being there for each other, they are an essential part of my life.
+        </p>
+        <!-- Image Container holding sibling images -->
+        <div class="image-container">
+            <!-- Image frame for Sibling 1 -->
+            <div class="image-frame">
+                <a href="images/family 1.jpg">
+                    <img src="images/family 1.jpg" alt="Sibling 1">
+                </a>
+                <p class="caption">Sibling 1</p>
+            </div>
+
+            <!-- Image frame for Sibling 2 -->
+            <div class="image-frame">
+                <a href="images/family 2.jpg">
+                    <img src="images/family 2.jpg" alt="Sibling 2">
+                </a>
+                <p class="caption">Sibling 2</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 align="center">My siblings and their role</h1>
+
+<table style="width: 50%;" align="center">
+    <tr>
+        <th>Siblings</th>
+        <th>Contents</th>
+    </tr>
+    <tr>
+        <td colspan="1"><img src="images/my sister.jpg" height="300 px"></td>
+        <td>This is my oldest sister and we call her as Atiqah. She is 32 years old and a very responsibilities among the siblings. She always prioritise her family more than anyone else. </td>
+    </tr>
+    <tr>
+        <td colspan="1"><img src="images/brother 1.jpg" height="300 px"></td>
+        <td>This is my first brother. His name is Ammar and he is 30 years old. He has been married for about 2 years and and now has one child which is a boy.</td>
+    </tr>
+    <tr>
+        <td colspan="1"><img src="images/brother 2.jpg" height="300 px"></td>
+        <td>This is my second  brother. His name is Aiman and he is 29 years old. He also has been married for about 2 years</td>
+    </tr>
+    <tr>
+        <td colspan="1"><img src="images/sister 2.jpg" height="300 px"></td>
+        <td>This is my second sister. Her name is Adilah and she is 25 years old. She is a very introvert and doest like to hang out with people. </td>
+    </tr>
+    </table>
+    
+    <div class="back-to-top">
+        <a href="#top">Back to Top</a>
+    </div>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY HOMEPAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("images/background 7.gif");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Title Styling */
+        .title-box {
+            background: linear-gradient(45deg, #c581bc, #b695b4, #fbc2eb); /* Gradient background */
+            padding: 10px 30px; /* Add padding around the text */
+            border-radius: 10px; /* Rounded corners for the box */
+            margin: 50px; /* Center the box on the page */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+            justify-content: center;        
+        }
+
+       .title-box h1 {
+            font-size: 2.0em; /* Adjust font size */
+            color: #17202a;
+            font-family: 'bazooka'; /* Use the font you mentioned */
+            text-align: center;
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Content Styling */
+        .content {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .content img {
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Buttons Section */
+        .buttons {
+            display: flex;
+            flex-direction: column; /* Stack the buttons vertically */
+            align-items: center; /* Center the buttons horizontally */
+            gap: 15px; /* Add space between the buttons */
+            margin: 20px;
+        }
+
+        .buttons img {
+            height: 50px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .buttons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Social Icons - Positioned to the left */
+        .social {
+            position: fixed; /* Fix the position of the icons */
+            top: 50%; /* Vertically center the icons */
+            left: 20px; /* Position the icons to the left */
+            transform: translateY(-50%); /* Adjust for perfect vertical centering */
+            display: flex;
+            flex-direction: column; /* Stack icons vertically */
+            gap: 20px; /* Space out the icons */
+            z-index: 1000; /* Ensure icons are above other content */
+        }
+
+        .social img {
+            width: 40px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .social img:hover {
+            transform: scale(1.2);
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #17202a;
+            width: 90%;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title in Box -->
+    <div class="title-box">
+        <h1>⋆✴︎˚｡⋆Welcome to Adlina's Website ⋆.ೃ࿔*:･</h1>
+    </div>
+
+    <!-- Image Section -->
+    <div class="content">
+        <div class="circle-frame">
+            <a href="images/myself 7.jpg">
+                <img src="images/myself 7.jpg" alt="Adlina Photo 1">
+            </a>
+        </div>
+    </div>
+    
+    <style>
+        .circle-frame {
+            width: 220px; /* Circle container size */
+            height: 220px; /* Same as width to create a circle */
+            border-radius: 50%; /* Make the frame circular */
+            border: 8px solid transparent; /* Space for the gradient border */
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb); /* Gradient for the border */
+            display: flex; /* Center image inside the frame */
+            justify-content: center; /* Horizontal alignment */
+            align-items: center; /* Vertical alignment */
+            margin: auto; /* Center the circle on the page */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+        }
+    
+        .circle-frame img {
+            width: 200px; /* Image size slightly smaller than frame */
+            height: 200px; /* Same as width for circular effect */
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover; /* Ensures the image fits perfectly */
+        }
+         /* Footer Styling */
+         footer {
+            background-color: #a466b3;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
+
+    <!-- Name Section -->
+    <p align="center">
+        <font size="5" color="#17202a" face="arial"><strong>Hello everyone!! My name is Adlina Binti Amran</strong></font>
+    </p>
+    
+    <p align="center">
+        <font size="3" color="17202a" face="arial"> Lets explore my personal website together with me!</font>
+    </p>
+
+    <!-- Buttons Section -->
+    <div class="buttons">
+        <a href="newbiodata.html"><img src="images/biodata button.png" alt="Biodata"></a>
+        <a href="myfamily.html"><img src="images/family button.png" alt="Family"></a>
+        <a href="mygallery.html"><img src="images/gallery button.png" alt="Gallery"></a>
+        <a href="education.html"><img src="images/education button.png" alt="Education"></a>
+        <a href="favouritemovie.html"><img src="images/Favourites button.png" alt="Favourites"></a>
+        <a href="link.html"><img src="images/link button.png" alt="Links"></a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social">
+        <a href="https://www.instagram.com/adnaamrn/?hl=en"> 
+            <img src="images/icon ig.webp" alt="Instagram" accesskey="1"> (AlT1)
+        </a>
+        <a href="https://wa.link/i71x3v">
+            <img src="images/icon whatsapp.png" alt="Whatsapp" accesskey="2"> (AlT2)
+        </a>
+        <a href="https://x.com/adlinaamrn?s=11&t=a9UnXCLDTe8kh_R4BXfFgw">
+            <img src="images/icon twitter.png" alt="X" accesskey="3"> (AlT3)
+        </a>
+    </div>
+     <!-- Footer Section -->
+     <footer>
+        <p>© 2024 Created by Adlina, Inc. All right reserved</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
